@@ -1,0 +1,90 @@
+body
+{
+    background-color: #20F5C0;
+}
+
+header
+{
+    text-align: center;
+    padding: 20px;
+    background-color: #43B3AE;
+    color: white;
+}
+
+nav
+{
+    background-color: #61A896;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav ul
+{
+list-style-type: none;
+padding: 10px;
+margin: 0;
+display: flex;
+justify-content: center;
+gap: 300px;
+}
+
+nav ul li
+{
+    display: inline;
+}
+
+nav a:hover
+{
+    font-weight: 1000;
+    text-decoration: underline;
+    text-decoration-color: #F4711F;
+}
+
+main
+{
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+
+.card
+{
+    background-color: #7E9D7E;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    display: grid;
+}
+
+.content 
+{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.mission-pic 
+{
+    width: 150px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.content p 
+{
+    flex: 1; 
+    margin: 0;
+}
+
+.prof-pic
+{
+width: 250px;
+height: auto;
+border-radius: 20px;
+}
+
+footer
+{
+    background-color:aliceblue;
+}

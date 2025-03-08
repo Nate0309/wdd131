@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Nathan O'Moore">
+    <meta name="description" content="Home page assignment for Nathan O'Moore WDD 131 - Dynamic Web Fundamentals with navigation">
+    <title>WDD 131 - Dynamic Web Fundamentals - Nathan O'Moore</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Test</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Nathan O'Moore</h1>
+        <nav>
+            <ul>
+                <li><a href = "https://www.linkedin.com/in/nathan-o-moore-b39614353/">LinkedIn</a></li>
+                <li><a href = "https://byupw.instructure.com/.">Canvas</a></li>
+                <li><a href = "https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/5?lang=eng&id=p13#p13">Favourite Scripture</a></li>
+                <li><a>Final Project</a></li>                    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class = "card">
+            <h2>About Me</h2>
+            <div class = "content">
+            <img class = "prof-pic" src = "./images/Profile.jpg" alt = "Profile photo">
+            <p>I am currently studying computer programming and web design through BYU, I am also learning skills in project management
+                and SAP ERP. I come from South Africa, I've moved between Gauteng and KZN a couple of times. I love programming, reading, gaming and hanging out 
+                with my friends and family
+            </p>          
+            </div>
+        </section>
+
+        <section class = "card">
+            <h2>My time as a missionary</h2>
+            <div class="content">
+            <img class = "mission-pic" src = "./images/missionaryPicture.jpg" alt = "A picture from my service as a misssionary in Pretoria">
+            <p>I spent my time as a full time missionary mostly in the Pretoria mission, but I had started in the Johannesburg mission. It was a great experience that taught
+                me a lot about leadership, responsibility, social skills, and coming closer to Jesus Christ.
+            </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span id = "currentyear"></span>
+            Nathan O'Moore
+            Gauteng, South Africa
+        </p>
+        <p id = "lastModified">test</p>
+    </footer>
 </body>
 </html>
