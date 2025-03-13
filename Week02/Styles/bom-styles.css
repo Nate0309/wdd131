@@ -18,7 +18,7 @@ h1 {
 
 main {
 	margin: 1rem auto;
-	border: 1px solid rgb(0 0 0 / 0.1);
+	border: 1px solid rgb(0 0 0 / 0.1) !important;
 	padding: 1rem;
 	background-color: #ddd;
 	display: flex;
