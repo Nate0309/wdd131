@@ -86,5 +86,8 @@ border-radius: 20px;
 
 footer
 {
+    padding: 5px;
     background-color:aliceblue;
+    border-radius: 10px;
+    text-align: center;
 }
