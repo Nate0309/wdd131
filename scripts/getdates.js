@@ -1,13 +1,6 @@
 const currentyear = document.querySelector("#currentyear");
-
-const today = new Date();
-
-currentyear.innerHTML = `<span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "full"
-	}
-).format(today)}</span>`;
+const year = new Date();
+currentyear.innerHTML = year;
 
 var latestDate = new Date();
 document.getElementById("lastModified").innerHTML = latestDate;
