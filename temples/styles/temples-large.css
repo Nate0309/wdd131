@@ -1,0 +1,14 @@
+@media screen and (min-width: 500px){
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 20px;
+    }
+
+    nav{
+        display: block;
+    }
+
+    #hamburger-btn{
+        display: none;
+    }
+}
