@@ -1,0 +1,100 @@
+body{
+    background-color: #90DA07;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #804E49;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#title{
+    margin: 0;
+    color: white;
+    font-size: 1.8rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+section{
+    background-color: #FDEE00;
+    width: 90%;
+    max-width: 400px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0.5);
+}
+
+#weather{
+    text-align: center;
+}
+
+
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 0.5rem 1rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0;
+}
+
+picture img{
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0;
+}
+
+
+@media screen and (min-width: 640px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    picture{
+        grid-column: 2;
+        grid-row: 1/ span 2;
+        justify-self: center;
+    }
+
+    section#data{
+        grid-column: 1;
+        grid-row: 1;
+        align-self: start;
+    }
+
+    section#weather{
+        grid-column: 3;
+        grid-row: 2;
+        align-self: end;
+    }
+
+
+}
+
+footer{
+    background-color: #BC8F8A;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Page of details of a country">
+    <meta name="Author" content="Nathan O'Moore">
+    <link rel="stylesheet" href="styles/place-design.css">
+    <script src="scripts/place-script.js" defer></script> 
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">South Africa</h1>
+    </header>
+    <main>
+    <picture>
+        <source srcset="images/soweto-tower-large.webp" media="min-width: 1000px">
+        <source srcset="images/soweto-tower-medium.webp" media="min-width: 700px">
+        <img src="images/soweto-tower-small.webp" alt="Soweto Tower">
+    </picture>
+    <section id="data">
+        <h2>Data</h2>
+    <dl>
+        <dt>Area:</dt>
+        <dd>1.22 million sq km</dd>
+        <dt>Population:</dt>
+        <dd>63.21 million</dd>
+        <dt>Capitals:</dt>
+        <dd>Cape Town, Pretoria, Bloemfontein</dd>
+        <dt>Languages:</dt>
+        <dd>Afrikaans, English, Ndebele, Northern Sotho, Southern Sotho, South African Sign, Swati, Tsonga, Venda, Xhosa, Zulu</dd>
+        <dt>Time Zone:</dt>
+        <dd>UTC+2</dd>
+        <dt>Calling Code:</dt>
+        <dd>+27</dd>
+    </dl>
+    </section>
+    <section id="weather">
+        <h2>Weather</h2>
+        <img src="images/weather.svg" alt="weather svg" width="100px">
+        <dl>
+            <dt>Temperature (°C):</dt>
+            <dd id="temperature">22</dd>
+            <dt>Conditions:</dt>
+            <dd>Cloudy</dd>
+            <dt>Wind (km/h):</dt>
+            <dd id="windSpeed">5</dd>
+            <dt>Wind Chill:</dt>
+            <dd id="windChill">n/a</dd>
+        </dl>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span>Nathan O'Moore</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
