@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color:#F0EBD8;
+}
+
+header{
+    display: grid;
+    grid-gap: 1rem;
+    background-color: #748CAB;
+    justify-content: center;
+    border: 5px rgba(0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    background-color: #1D2D44;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    gap: 1rem;
+}
+
+nav li{
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav a{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    width: 100%;
+    flex: 1 1 100%;
+    color: #F0EBD8;
+}
+
+nav a:hover{
+    background-color: #F0EBD8;
+    color: black;
+    text-decoration: underline;
+}
+
+.active{
+    color: yellow;
+}
+
+nav.show{
+    display: block;
+}
+
+#hamburger-btn{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+figure{
+    text-align: center;
+    padding: 20px;
+}
+
+figure img{
+    max-width: 500px;
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+}
+
+footer{
+    background-color: #1D2D44;
+    color: #F0EBD8;
+}
+
+footer p{
+    text-align: center;
+}
