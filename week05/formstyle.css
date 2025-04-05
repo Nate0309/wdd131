@@ -1,0 +1,116 @@
+/* Reset some default margins and padding for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and page layout */
+body {
+    font-family: 'Arial', sans-serif; /* Change to your preferred font */
+    background-color: #f9f9f9; /* Soft light background color */
+    color: #333; /* Dark text for contrast */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main container to center content */
+main {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form styling */
+form {
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset for grouping form elements */
+fieldset {
+    border: none; /* Remove default fieldset border */
+    padding: 0;
+    margin: 0;
+}
+
+/* Form legend styling */
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4CAF50; /* Green color for the title */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #4CAF50;
+}
+
+/* Label styling for form fields */
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Select input */
+select,
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Add some space between radio/checkbox elements */
+label input {
+    margin-right: 8px;
+}
+
+/* Radio button & checkbox styling */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Optional: Style for the optional text fields */
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Responsive styling: Ensure form fits well on smaller screens */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    button {
+        width: auto;
+        margin: 10px 0;
+    }
+}

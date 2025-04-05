@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Nathan O'Moore</title>
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Nathan O'Moore">
+    <link rel="stylesheet" href="formstyle.css">
+    <script src="form_script.js" defer></script>
+</head>
+<body>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Product Review</legend>
+                    <label>Product name
+                        <select id="product" name="product" required>
+                            <option value="" disabled selected>Choose a Product:</option>
+                        </select>
+                    </label>
+                    <div>Overall Rating</div>
+                    <label><input type="radio" name="rating" value="1" required>☆</label>
+                    <label><input type="radio" name="rating" value="2">☆☆</label>
+                    <label><input type="radio" name="rating" value="3">☆☆☆</label>
+                    <label><input type="radio" name="rating" value="4">☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="5">☆☆☆☆☆</label>
+
+                    <div>Date of installation</div>
+                    <input type="date" name="installed" id="installed" required>
+
+                    <div>Which features did you find useful in this product?(Check all that apply)</div>
+                    <label><input type="checkbox" name="features" id="feature1" value="durability">Durability</label>
+                    <label><input type="checkbox" name="features" id="feature2" value="Ease of Use">Ease of Use</label>
+                    <label><input type="checkbox" name="features" id="feature3" value="Performance">Performance</label>
+                    <label><input type="checkbox" name="features" id="feature4" value="Design">Design</label>
+
+                    <label for="writtenreview">Written Review (optional)</label>
+                    <textarea id="writtenreview" name="review"></textarea>
+                    <label for="name">Your name (optional)</label>
+                    <input type="text" name="name" id="name">
+
+                    <button type="Submit">Post Review</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
