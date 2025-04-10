@@ -87,3 +87,22 @@ img:hover{
     justify-items: center; /* Centers the images horizontally */
     align-items: center; /* Centers the images vertically */
 }
+
+
+
+
+
+@media (max-width: 768px) {
+    ul li {
+        display: flex; /* Stacks the items vertically on smaller screens */
+        margin-right: 0; /* Resets margin for smaller screens */
+        margin-bottom: 10px; /* Adds space between items */
+    }
+    .image-grid {
+        grid-template-columns: 1fr; /* Stacks images in a single column on smaller screens */
+    }
+    .popular-content {
+        grid-template-columns: 1fr; /* Stacks images in a single column on smaller screens */
+    }
+    
+}
