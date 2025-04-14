@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="adeptus.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -17,9 +18,9 @@
         <h2>Warhammer 40K</h2>
         <nav>
             <ul>
-                <li id="find">Find 40K near you</li>
-                <li id="build">How to build your army</li>
-                <li id="contact">Contact us</li>
+                <li id="find"><a href="Find40k.html">Find 40K near you</a></li>
+                <li id="build"><a href="build.html">How to build your army</a></li>
+                <li id="contact"><a href="contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -33,10 +34,9 @@
                 <figcaption>Sisters of Battle</figcaption>
                 </figure>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim id est laborum
+                The Sisters of Battle have become seriously popular as of late, especially with the religious zealots of battle aesthetic! With their tanks that are 
+                literal pipe organs, and their ability to take on the most powerful of foes with their miracle dice, they are a force to be reckoned with.
+                 They are not just fun to play, but give the player a real and fun challenge with painting that really lets creativity take the lead!
             </p>
             </div>
         </section>
@@ -45,15 +45,15 @@
             <h2>Our Favourite Designs</h2>
             <div class="image-grid">
             <figure>
-                <img src="Ultra_Marines.webp" alt="Ultra Marines" id="ultra-marines">
+                <img src="Ultra_Marines.webp" alt="Ultra Marines" id="ultra-marines" loading="lazy">
                 <figcaption>Ultra Marines heavy artillery</figcaption>
             </figure>
             <figure>
-                <img src="Adeptus_Custodes.jpg" alt="Adeptus Custodes" id="adeptus-custodes">
+                <img src="Adeptus_Custodes.jpg" alt="Adeptus Custodes" id="adeptus-custodes" loading="lazy">
                 <figcaption>Dark Adeptus Custodes elite warriors</figcaption>
             </figure>
             <figure>
-                <img src="Nekrons.jpg" alt="Necrons" id="necrons">
+                <img src="Nekrons.jpg" alt="Necrons" id="necrons" loading="lazy">
                 <figcaption>Necron Godkillers</figcaption>
             </figure>
             </div>
@@ -62,6 +62,7 @@
 
     <footer>
         <p>Nathan O'Moore</p>
+        <p id="footer-content"></p>
     </footer>
 </body>
 </html>

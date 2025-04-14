@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us for more information about Warhammer 40K!">
+    <meta name="author" content="Nathan O'Moore">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="adeptus.js" defer></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <h1>Adeptus Finder</h1>
+        <h2>Warhammer 40K</h2>
+        <nav>
+            <ul>
+                <li id="find"><a href="homepage.html">Home</a></li>
+                <li id="build"><a href="BuildArmy.html">How to build your army</a></li>
+                <li id="contact"><a href="ContactUs.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need more information, feel free to reach out to us using the form below:</p>
+            <form id="contact-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </fieldset>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Nathan O'Moore</p>
+        <p id="footer-content"></p>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the default form submission behavior
+            alert("Thank you! Your message has been sent."); // Show a confirmation message
+            this.reset(); // Optionally reset the form fields
+        });
+    </script>
+</body>
+</html>

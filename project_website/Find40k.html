@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find Warhammer 40K locations near you!">
+    <meta name="author" content="Nathan O'Moore">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="adeptus.js" defer></script>
+    <title>Find 40K</title>
+</head>
+<body>
+    <header>
+        <h1>Adeptus Finder</h1>
+        <h2>Warhammer 40K</h2>
+        <nav>
+            <ul>
+                <li id="find"><a href="homepage.html">Home</a></li>
+                <li id="build"><a href="build.html">How to build your army</a></li>
+                <li id="contact"><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="find-locations">
+            <h2>Find Warhammer 40K Locations</h2>
+            <p>Use our tool to find Warhammer 40K gaming locations, stores, and events near you!</p>
+            <form id="location-form">
+                <fieldset>
+                    <legend>Pick a place</legend>
+                    <label for="city">Select your area:</label>
+                    <select id="city" required>
+                        <option value="">-- Choose a City --</option>
+                        <option value="sandton">Sandton</option>
+                        <option value="randburg">Randburg</option>
+                        <option value="roodepoort">Roodepoort</option>
+                        <option value="midrand">Midrand</option>
+                        <option value="fourways">Fourways</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What kind of place are you looking for?</legend>
+                    <label><input type="radio" name="type" value="shop" required> Hobby Shop</label><br>
+                    <label><input type="radio" name="type" value="club"> Gaming Club</label><br>
+                    <label><input type="radio" name="type" value="event"> Event Venue</label>
+                </fieldset>
+
+                <button type="submit">Find Places</button>
+            </form>
+
+            <div id="results" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Nathan O'Moore</p>
+        <p id="footer-content"></p>
+    </footer>
+</body>
+</html>

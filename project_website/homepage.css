@@ -26,6 +26,15 @@ ul li {
     margin-right: 100px;
 }
 
+ul li a{
+    text-decoration: none; /* Remove underline */
+    color: white; /* Change text color */
+    padding: 10px 15px; /* Add padding for button-like appearance */
+    border-radius: 5px; /* Add rounded corners */
+    display: inline-block; /* Ensure proper spacing */
+    font-weight: bold;
+}
+
 #find, #build, #contact {
     background-color: #991115;
     border-radius: 10px;
@@ -88,7 +97,10 @@ img:hover{
     align-items: center; /* Centers the images vertically */
 }
 
-
+#popular p{
+    text-align: center;
+    margin-right: 10px;
+}
 
 
 
@@ -104,5 +116,236 @@ img:hover{
     .popular-content {
         grid-template-columns: 1fr; /* Stacks images in a single column on smaller screens */
     }
+    #space-marines, #custodes, #orks {
+        display: grid !important; /* Use flexbox for stacking */
+        grid-template-rows: 1fr 1fr 1fr !important;
+        align-items: center !important; /* Center items horizontally */
+        text-align: center !important; /* Center-align text */
+        gap: 20px; /* Add spacing between the image and text */
+    }
+
+    #space-marines img, #custodes img, #orks img {
+        grid-row: 2 !important; /* Ensure the image stays in the first column */
+        max-width: 100% !important; /* Ensure images are responsive */
+        height: auto !important; /* Maintain aspect ratio */
+        margin: 0 !important;
+    }
+
+    #space-marines p, #custodes p, #orks p {
+        grid-row: 3 !important; /* Ensure the text stays in the second column */
+        font-size: 20px !important;
+        padding: 10px !important;
+        text-align: center !important; /* Align text to the center */
+        margin: 0 !important; /* Reset margin for smaller screens */
+    }
     
+}
+
+
+/*Find 40k styling*/
+
+
+/* Style the form container */
+#location-form {
+    background-color: #f4f4f4; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    max-width: 500px;
+    margin: 20px auto; /* Center the form */
+    font-family: "PT Serif", serif; /* Match the font style */
+}
+
+/* Style form labels */
+#location-form label {
+    display: block; /* Stack labels above inputs */
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Darker text for readability */
+}
+
+/* Style the select dropdown */
+#location-form select {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the fieldset */
+#location-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Style the legend */
+#location-form legend {
+    font-weight: bold;
+    color: #991115; /* Match the theme color */
+    margin-bottom: 10px;
+}
+
+/* Style radio buttons */
+#location-form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style the submit button */
+#location-form button {
+    background-color: #991115;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the button */
+#location-form button:hover {
+    background-color: #800505;
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Style the results container */
+#results {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+}
+
+#results{
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #800505;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+footer{
+    width: 100%;
+    background-color: #787878;
+    color: white;
+    text-align: left;
+    padding: 10px 20px;
+}    
+
+
+#space-marines, #orks {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Adjust column sizes for better alignment */
+    gap: 20px; /* Add spacing between the image and text */
+    align-items: center; /* Vertically align the image and text */
+    background-color: #800505;
+}
+
+#space-marines img, #orks img {
+    grid-column: 1; /* Ensure the image stays in the first column */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#space-marines p, #orks p {
+    grid-column: 2; /* Ensure the text stays in the second column */
+    font-size: 20px;
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+#space-marines h4{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#custodes {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Adjust column sizes for better alignment */
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; /* Add spacing between the image and text */
+    align-items: center; /* Vertically align the image and text */
+    background-color: #800505;
+}
+
+#custodes img {
+    grid-column: 2; /* Ensure the image stays in the first column */
+    grid-row: 2;
+    max-width: 500px;
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 120px;
+}
+
+#custodes p {
+    grid-column: 1; /* Ensure the text stays in the second column */
+    grid-row: 2;
+    font-size: 20px;
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+#custodes h4{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+
+
+
+/* Contact form styling */
+#contact-form {
+    background-color: #f4f4f4; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    max-width: 500px;
+    margin: 20px auto; /* Center the form */
+    font-family: "PT Serif", serif; /* Match the font style */
+}
+
+/* Style form labels */
+#contact-form label, #contact-form legend {
+    display: block; /* Stack labels above inputs */
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Darker text for readability */
+}
+
+/* Style input fields and textarea */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "PT Serif", serif;
+}
+
+/* Style the submit button */
+#contact-form button {
+    background-color: #991115;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the button */
+#contact-form button:hover {
+    background-color: #800505;
+    transform: scale(1.05); /* Slightly enlarge the button */
 }
